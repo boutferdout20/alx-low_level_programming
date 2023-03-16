@@ -1,15 +1,11 @@
 #include <stdio.h>
 /**
- * main - this is the main function
- *
- * Return: always 0
+ * main - Prints a message to the console
+ * Return: 0 (Success)
  */
-
-
-
-
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle);
+/Puts is designed to print strings to the console/
+puts("/"Programming is like building a multilingual puzzle");
 return (0);
 }
