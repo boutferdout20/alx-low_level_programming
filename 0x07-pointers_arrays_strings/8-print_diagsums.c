@@ -17,5 +17,5 @@ for (b = 0; b < size; b++)
 sum += a[(size * b) +b];
 sum1 += a[(size * (b +1)) - (b +1)];
 }
-printf("%d, %d\n", sum, sum1);
+printf("%d,%d\n", sum, sum1);
 }
