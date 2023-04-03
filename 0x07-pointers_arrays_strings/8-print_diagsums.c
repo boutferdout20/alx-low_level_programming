@@ -8,14 +8,15 @@
  */
 void print_diagsums(int *a, int size)
 {
-int b;
-unsigned int sum, sum1;
-sum = 0;
-sum1 = 0;
-for (b = 0; b < size; b++)
+int b, m1, m2;
+m1 = 0;
+m2  = 0;
+for (b = 0; b < (size * size); b++)
 {
-sum += a[(size * b) +b];
-sum1 += a[(size * (b +1)) - (b +1)];
+if (b % (size + 1) == 0)
+m1 += a[b];
+if (b % (size - 1) == 0 && b != 0 && b < size * size - 1)
+m2 += a[b];
 }
-printf("%d,%d\n", sum, sum1);
+printf("%d,%d\n", m1, m2);
 }
