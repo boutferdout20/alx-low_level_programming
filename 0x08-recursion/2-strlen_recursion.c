@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- * _strlen_recursion - write string
- * @s: write of string
- * Return: long
+ * _strlen_recursion - write srting star jdid
+ * @s: string for writing
+ * Return: twil of string
  */
 int _strlen_recursion(char *s)
 {
-int tw =0;
-while (*s != '\0')
+int twil = 0;
+if (*s)
 {
-tw++;
-s++;
+twil++;
+twil += _strlen_recursion(s + 1);
 }
-return(tw);
+return (twil);
 }
