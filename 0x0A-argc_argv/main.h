@@ -5,4 +5,5 @@
 int atoi(char const *s);
 int _putchar(char c);
 int main(int argc, char const *argv[]);
+char strtol();
 #endif
