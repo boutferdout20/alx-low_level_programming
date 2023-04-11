@@ -1,17 +1,17 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * main - write function
- * @argc: num
+ * main - write
+ * @argc: counte
  * @argv: array
  * Return: 0
  */
 int main(int argc, char const *argv[])
 {
-int h;
-for (h = 0; h < argc; h++)
+int b;
+for (b = 0; b < argc; b++)
 {
-printf("%s\n", argv[h]);
+printf("%s\n", argv[b]);
 }
 return (0);
 }
