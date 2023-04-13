@@ -10,8 +10,8 @@ int is_digit(char *s)
 {
 int a = 0;
 while (s[a])
-if (s[a] < '0' || s[a] > '9')
 {
+if (s[a] < '0' || s[a] > '9')
 return (0);
 a++;
 }
@@ -26,7 +26,9 @@ int _strlen(char *s)
 {
 int a = 0;
 while (s[a] != '\0')
+{
 a++;
+}
 return (a);
 }
 /**
@@ -63,10 +65,12 @@ for (lon1 = lon1 - 1; lon1 >= 0; lon1--)
 d1 = st1[lon1] - '0';
 po = 0;
 for (lon2 = _strlen(st2) - 1; lon2 >= 0; lon2--)
+{
 d2 = st2[lon2] - '0';
 po += res[lon1 + lon2 + 1] + (d1 *d2);
 res[lon1 + lon2 + 1] = po % 10;
 po /= 10;
+}
 if (po > 0)
 res[lon1 + lon2 + 1] += po;
 }
