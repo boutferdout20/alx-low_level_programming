@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 char *st1, *st2;
 int lon1, lon2, lon, a, po, d1, d2, *res, b = 0;
 st1 = argv[1], st2 = argv[2];
-if (argc != 3 || !is_digit(st1) || !is_digit(st2) )
+if (argc != 3 || !is_digit(st1) || !is_digit(st2))
 errors();
 lon1 = _strlen(st1);
 lon2 = _strlen(st2);
