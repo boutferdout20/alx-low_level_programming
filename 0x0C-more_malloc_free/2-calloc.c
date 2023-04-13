@@ -9,7 +9,7 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-int unsigned a;
+unsigned int a;
 for (a = 0; a < n; a++)
 {
 s[a] = b;
@@ -17,7 +17,7 @@ s[a] = b;
 return (s);
 }
 /**
- * *_calloc =  calloc l'allocation de memoire de tableau
+ * *_calloc - calloc l'allocation de memoire de tableau
  * @nmemb: numero
  * @size: taille
  * Return: aloccation de memoire
