@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * int_dog - tahyi2a variabl
+ * init_dog - initialisation d'un variable struct dog
  * @d: pointeur
  * @name: le nom
  * @age: l'age
