@@ -1,3 +1,4 @@
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -9,27 +10,24 @@
 int main(int argc, char *argv[])
 {
 int byt, a;
-char *tab;
+char *pt = (char *)main;
 if (argc != 2)
 {
 printf("Error\n");
 exit(1);
 }
-byt = atoi(argv[1]);
-if (byt < 0)
+a = atoi(argv[1]);
+if (a < 0)
 {
 printf("Error\n");
 exit(2);
 }
-tab = (char *)main;
-for (a = 0; a < byt; a++)
+for (byt = 0; byt < a; byt++)
 {
-if (a == byt - 1)
-{
-printf("%02hhx\n", tab[a]);
-break;
+printf("%02x", pt[byt] & 0xFF);
+if (byt != a - 1)
+printf(" ");
 }
-printf("%02hhx", tab[a]);
-}
+printf("\n");
 return (0);
 }
