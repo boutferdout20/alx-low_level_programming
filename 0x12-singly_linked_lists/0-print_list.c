@@ -2,6 +2,7 @@
 #include <stdarg.h>
 #include <stddef.h>
 #include <unistd.h>
+#include <stdlib.h>
 #include "lists.h"
 /**
  * print_list - write the element
