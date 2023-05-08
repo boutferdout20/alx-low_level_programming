@@ -17,7 +17,7 @@ if (f == -1)
 return (0);
 b = malloc(sizeof(char) * letters);
 t = write(f, b, letters);
-w = write(STDOUT_FILENO, b, y);
+w = write(STDOUT_FILENO, b, t);
 free(b);
 close(f);
 return (w);
