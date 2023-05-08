@@ -1,8 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <fcnt.h>
-#include <stdio.h>
-#include <unistd.h>
 /**
  * read_textfile - lire text to print STDOUT
  * @filename: read text
